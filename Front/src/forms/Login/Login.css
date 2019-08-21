@@ -1,0 +1,126 @@
+.box{
+  width:400px;
+  padding: 40px 20px;
+  margin: 10% auto;
+  background: #191919;
+  text-align: center;
+  background-color:  rgba(0,0,0,.9)
+}
+.box h1{
+color: white;
+text-transform: uppercase;
+font-weight: 500;
+
+}
+.box input[type="text"],.box input[type="password"]{
+
+ border:0;  
+ background: none;
+ display: block;
+ margin: 20px auto;
+ text-align: center;
+  border:2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline:none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+
+width: 350px;
+border-color:#2ecc71;
+}
+.box input[type="submit"]{
+  border:0;  
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border:2px solid #2ecc71;
+  padding: 14px 40px;
+  outline:none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer
+}
+.box input[type="submit"]:hover{
+    background: #2ecc71
+}
+.alertLogin {
+  color: #eae6e6;
+  background-color: #dc3545;
+  border-color: #f5c6cb;
+  margin: auto;
+  position: inherit;
+  border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.error{
+  color: red;
+}
+/* ===============================mobile Styles=========================================== */
+@media only screen and (max-width: 600px){
+  .box{
+    width:85%;
+    margin: 20% auto;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  
+  }
+  
+  
+.box input[type="text"],.box input[type="password"]{
+  border:0;  
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+   border:2px solid #3498db;
+   padding: 14px 10px;
+   width: 180px;
+   outline:none;
+   color: white;
+   border-radius: 24px;
+   transition: 0.25s
+ }
+ .box input[type="text"]:focus,.box input[type="password"]:focus{
+
+  width: 230px;
+  border-color:#2ecc71;
+  }
+  .box input[type="submit"]{
+    border:0;  
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid #2ecc71;
+    padding: 14px 40px;
+    outline:none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+  }
+
+  
+  .box input[type="submit"]:hover{
+    background: #2ecc71
+}
+
+}
+
+/* ===============================Tablet Styles=========================================== */
+@media only screen and (min-width: 601px) and (max-width: 1025px) {
+
+.box{
+  margin: 20% auto;
+
+}
+}

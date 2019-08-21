@@ -1,0 +1,50 @@
+.table{
+    background-color: rgba(52,73,94,.9);
+    width: 80%;
+    margin: 5% auto;
+    border-radius: 5px;
+}
+th{
+    text-align: center;
+    color: white;
+}
+td{
+    text-align: center;
+    color: white;
+
+}
+.removeBtn{
+    border-radius: 10px;
+    background: red;
+    border: none;
+    padding: 3px 10px;
+    color: white;
+}
+.table-nonfluid {
+    width: auto !important;
+ }
+/* .responsive{
+    overflow-x:auto;
+} */
+  /* ===============================mobile Styles=========================================== */
+  @media only screen and (max-width: 580px){
+
+    .table{
+        background-color: rgba(52,73,94,.9);
+        width: 80%;
+        margin: 5% auto;
+        border-radius: 5px;
+    }
+    .table-nonfluid {
+        width: auto !important;
+     }
+    .removeBtn{
+        border-radius: 10px;
+        background: red;
+        border: none;
+        padding: 3px 10px;
+        color: white;
+    }
+
+    
+}

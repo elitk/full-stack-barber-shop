@@ -1,0 +1,17 @@
+body{
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+ 
+  }
+  li{
+    padding: 5px;
+
+  }
+
+  .username{
+    float: right;
+    color:rgba(255,255,255,.5);
+    margin: auto;
+  }
+ 

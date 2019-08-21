@@ -1,0 +1,167 @@
+.middle{
+     margin:  auto;
+}
+
+.card{
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+    background-color: transparent;  
+    }
+
+    .front,.back{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition:  transform .6s linear;
+    
+    }
+
+.front img {
+    height: 100%;
+    width: 100%;
+}
+
+.front{
+    transform: perspective(600px)rotateY(0deg)
+}
+
+.back{
+    background: #f1f1f1;
+    transform: perspective(600px)rotateY(180deg)
+}
+
+.back-content{
+    color: #2c3e50;
+    text-align: center;
+    margin: 100% auto;
+    width: 100%;
+}
+
+.sm{
+    margin:20px 0
+}
+
+.sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.sm .one:hover{
+    color: blue;
+}
+
+.sm .two:hover{
+    color: palevioletred;
+}
+
+.sm .three:hover{
+    color:red;
+}
+
+.sm a:hover{
+    background: #2c3e50;
+    text-decoration: none;
+}
+
+.card:hover > .front{
+    transform: perspective(600px)rotateY(-180deg)
+}
+
+.card:hover > .back{
+    transform: perspective(600px)rotateY(0deg)
+}
+   
+
+/* ===============================mobile Styles=========================================== */
+@media only screen and (max-width: 600px){
+
+
+.card{
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+    background-color: transparent;  
+    }
+    .front,.back{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition:  transform .6s linear;
+    
+    }
+
+.front{
+    transform: perspective(600px)rotateY(0deg)
+}
+.back{
+    background: #f1f1f1;
+    transform: perspective(600px)rotateY(180deg)
+}
+.back-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+}
+.sm{
+    margin:20px 0
+}
+.sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+.sm .one:hover{
+    color: blue;
+}
+.sm .two:hover{
+    color: palevioletred;
+}
+.sm .three:hover{
+    color:red;
+}
+.sm a:hover{
+    background: #2c3e50;
+    text-decoration: none;
+}
+.card:hover > .front{
+    transform: perspective(600px)rotateY(-180deg)
+}
+.card:hover > .back{
+
+    transform: perspective(600px)rotateY(0deg)
+}
+.row{
+    margin-top:20%;
+}      
+
+.col-sm-4{
+    padding: 10px;
+
+}
+
+}
+/* ===============================Tablet Styles=========================================== */
+@media only screen and (min-width: 601px) and (max-width: 1025px) {
+
+    .row {
+        margin-top: 30%;
+    }
+    }

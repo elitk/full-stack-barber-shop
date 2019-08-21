@@ -1,0 +1,84 @@
+.registerBox{
+    width:400px;
+    padding: 40px 20px;
+    margin: auto;
+    margin-top: 30px;
+    background: #191919;
+    text-align: center ;
+    background-color:  rgba(0,0,0,.9)
+}
+
+.registerBox h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    }
+    .registerBox input[type="text"],.registerBox input[type="password"]{
+     border:0;  
+     background: none;
+     display: block;
+     margin: 20px auto;
+     text-align: center;
+      border:2px solid #3498db;
+      padding: 14px 10px;
+      width: 200px;
+      outline:none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s
+    }
+    .registerBox input[type="text"]:focus,.registerBox input[type="password"]:focus{
+    width: 350px;
+    border-color:#2ecc71;
+
+    }
+    .registerBox input[type="submit"]{
+      border:0;  
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border:2px solid #2ecc71;
+      padding: 14px 40px;
+      outline:none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s;
+      cursor: pointer
+    } 
+     .registerBox input[type="submit"]:hover{
+        background: #2ecc71
+    }
+    /* ===============================mobile Styles=========================================== */
+@media only screen and (max-width: 480px){
+  .registerBox{
+    width:85%;
+    margin: 10% auto;
+}
+
+  
+  
+
+ .registerBox input[type="text"]:focus,.registerBox input[type="password"]:focus{
+
+  width: 300px;
+  border-color:#2ecc71;
+  }
+ 
+
+  
+ 
+
+
+
+
+}
+/* ===============================Tablet Styles=========================================== */
+@media only screen and (min-width: 601px) and (max-width: 1025px) {
+
+  .registerBox{
+    margin: 20% auto;
+  
+  }
+  }
