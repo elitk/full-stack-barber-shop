@@ -17,10 +17,6 @@ mongoose.connect(config.mongoUrl, { useNewUrlParser: true }, (err) => {
     if (err) { throw err; }
     console.log("connection successfully to zero database !");
 })
-app.get('/', (req, res) => {
-    res.write("hello");
-    res.end();
-})
 
 app.use('/client/', clientRouter);
 app.use('/product/', productRouter);
